@@ -1,24 +1,32 @@
-# Compiled class file
-*.class
+ package practica1;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
+public class Practica1 {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+         Scanner leer = new Scanner(System.in);
+         int a , b , suma , resta , multiplicacion , division , residuo ;
+         
+         System.out.println("Escribir un numero");
+            a = leer.nextInt();
+            
+         System.out.println("Escribir un numero");
+            b = leer.nextInt();
+            
+            suma           = a+b;
+            resta          = a-b;
+            multiplicacion = a*b;
+            division       = a/b;
+            residuo        = a/b;
+            
+            System.out.println("La suma es"+suma);
+            System.out.println("La resta es"+resta);
+            System.out.println("La multiplicacion es"+multiplicacion);
+            System.out.println("La division es"+division);
+            System.out.println("El residuo es"+residuo);
+    }
+    
+}
